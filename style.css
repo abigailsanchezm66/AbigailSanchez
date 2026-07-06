@@ -1,0 +1,130 @@
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Hace que los tamaños sean más fáciles de calcular */
+    font-family: Arial, sans-serif; /* Una tipografía  */
+}
+
+body {
+    background-color: #f0f2f5; /* Color gris clarito para el fondo de la pantalla */
+    color: #333333; /* Color gris oscuro para las letras */
+}
+
+/*  BARRA DE NAVEGACIÓN (HEADER Y NAV)*/
+.header {
+    background-color: #1a252f; /* Color azul oscuro para la barra */
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Pone el logo a la izquierda y los enlaces a la derecha */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el contenido en pantallas grandes */
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none; /* Le saca los puntitos negros a la lista */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Separa un enlace del otro */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Le saca el subrayado a los enlaces */
+}
+
+/* . SECCIÓN DEL BUSCADOR Y TEXTOS */
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.controles {
+    text-align: center; /* Centra el título y el párrafo */
+    margin-bottom: 30px;
+}
+
+.controles h1 {
+    margin-bottom: 10px;
+    color: #1a252f;
+}
+
+.buscador-box {
+    margin-top: 15px;
+}
+
+/* El cuadro de texto */
+#input-busqueda {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* El botón de cargar */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db; /* Color celeste/azul llamativo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Hace que aparezca la manito al pasar el mouse */
+}
+
+/* . LAS TARJETAS RESPONSIVAS */
+.grid-tarjetas {
+    display: grid;
+    /*  Acomoda las tarjetas solas según el tamaño de la pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espacio de separación entre tarjetas */
+}
+
+/* Estilo para cada tarjeta que crea JavaScript */
+.tarjeta {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center; /* Centra las fotos y textos dentro de la tarjeta */
+}
+
+/* Estilo para las imágenes de los pósters */
+.tarjeta img {
+    width: 100%; /* La imagen se adapta al ancho de la tarjeta */
+    height: 350px; /* Altura fija para que todas las portadas queden iguales */
+    object-fit: cover; /* Hace que la foto no se estire ni se deforme */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #1a252f;
+}
+
+.tarjeta h4 {
+    font-size: 14px;
+    color: #7f8c8d; /* Gris más claro para el título en japonés */
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}

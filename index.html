@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Sitio Web con API - TP</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">GibliInfo / GeekApp</div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="controles">
+            <h1>Explora las peliculas</h1>
+            <p>Busca información en tiempo real consumiendo datos de una API externa.</p>
+            
+            <div class="buscador-box">
+                <input type="text" id="input-busqueda" placeholder="Ej. Rick, Pikachu, Batman...">
+                <button id="btn-cargar" class="btn">Cargar Datos</button>
+            </div>
+        </section>
+
+        <section id="contenedor-tarjetas" class="grid-tarjetas">
+            </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
